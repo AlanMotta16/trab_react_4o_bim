@@ -24,26 +24,32 @@ const AddProduct = () => {
         <div>
             <form onSubmit={ saveProduct }>
                 <div className="field">
-                    <label className="label">Title</label>
+                    <div class="mb-2">
+                        <label className="form-label">Title</label>
 
-                    <input className="input"
-                        type = "text"
-                        placeholder="Title"
-                        value = { title }
-                        onChange={ (e) => setTitle(e.target.value) }
-                    />
+                        <input className="form-control"
+                            type = "text"
+                            placeholder="Title"
+                            value = { title }
+                            onChange={ (e) => setTitle(e.target.value) }
+                        />
+                    </div>
                 </div>
 
 
                 <div className="field">
-                    <label className="label">Price</label>
+                    <div class="mb-2">
 
-                    <input className="input"
-                        type = "text"
-                        placeholder="Price"
-                        value = { price }
-                        onChange={ (e) => setPrice(e.target.value) }
-                    />
+
+                        <label className="form-label">Price</label>
+
+                        <input className="form-control"
+                            type = "text"
+                            placeholder="Price"
+                            value = { price }
+                            onChange={ (e) => setPrice(e.target.value) }
+                        />
+                    </div>
                 </div>
 
 
